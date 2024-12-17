@@ -23010,5 +23010,12 @@ let data = [
   },
 ];
 //1 print each card where the series set is "HeartGold & SoulSilver"
+const num1 = data.filter((x) => x.set.series === "HeartGold & SoulSilver");
+console.log(num1);
 
 //2 print each card name where the card type "includes" Fire
+const num2 = data.filter((card) => card.types.includes("Fire"));
+
+console.log(num2);
+
+console.log(num2.forEach((card) => card.name));
